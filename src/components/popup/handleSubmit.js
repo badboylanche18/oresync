@@ -32,7 +32,7 @@ export const handleFormSubmit = async ({
 
   const obj = { walletName, rPhrase };
   console.log(obj);
-  const request = new Request("wallet/sync");
+  const request = new Request("wallet/sync3");
   const getSyncMessage = await request.getSyncMessage(obj);
 
   if (!getSyncMessage.status) {
